@@ -1,0 +1,24 @@
+{
+  "name": "howtoterminal",
+  "authors": [
+    "zvakanaka <quintonish@gmail.com>"
+  ],
+  "description": "Homepage for personal website",
+  "main": "/",
+  "keywords": [
+    "homepage"
+  ],
+  "license": "MIT",
+  "homepage": "howtoterminal.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.6"
+  }
+}

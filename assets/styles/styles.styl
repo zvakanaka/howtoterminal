@@ -1,0 +1,71 @@
+filter-hue-rotate()
+  -webkit-filter: hue-rotate(arguments)
+  -moz-filter: hue-rotate(arguments)
+  filter: hue-rotate(arguments)
+
+filter-contrast()
+  -webkit-filter: contrast(arguments)
+  -moz-filter: contrast(arguments)
+  filter: contrast(arguments)
+
+nav-color = #0c2e28
+
+.navbar-inverse
+  background-color: nav-color
+
+.navbar-inverse a img
+  height: inherit
+  overflow: hidden
+  filter-contrast: 106%
+  filter-hue-rotate: -38deg
+
+@media screen and (max-width: 580px)
+  logo-cut-size = 298px
+  .navbar-inverse a img
+    -webkit-clip-path: inset(0px 0px 0px logo-cut-size);
+    transform: translateX(-298px);
+  .custom-header-logo
+    width: 80px;
+
+.custom-header-logo
+  overflow: hidden
+  padding-top: 0px
+
+.navbar-right
+  margin-right: 15px
+
+
+.navbar
+  border-radius: 0px
+
+.craigs-box
+  width: 310px
+  height: 310px
+
+.craigs-box img
+  width: 250px
+  height: 175px
+  object-fit: cover
+
+
+/* Sticky footer styles from http://getbootstrap.com/examples/sticky-footer-navbar/*/
+html
+  position: relative
+  min-height: 100%
+
+body
+  /* Margin bottom by footer height */
+  margin-bottom: 60px
+
+.footer
+  position: absolute
+  bottom: 0
+  width: 100%
+  /* Set the fixed height of the footer here */
+  height: 60px
+  background-color: nav-color
+
+.custom-footer-logo
+  padding-top: 0px
+  width: 30px
+  height: 30px
