@@ -23,6 +23,7 @@ app.get('/', function(req, res) {
   debug('GET /');
 
   res.render('index', {
+    page: process.env.SUB_APP ? req.url : req.url,//url
     siteUrl: 'localhost'
   });
 
